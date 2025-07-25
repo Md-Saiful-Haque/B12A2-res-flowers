@@ -24,6 +24,10 @@ main{
     max-width: 1140px;
     margin: 0 auto;
 }
+footer{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .highlight{
     color: #E95A08;
 }
@@ -141,10 +145,10 @@ main{
     position: absolute;
     top: -130px;
     right: -90px;
-    /* animation: spin 5s linear infinite; */
+    animation: spin 5s linear infinite;
 }
 
-/* @keyframes spin {
+@keyframes spin {
     0% {
         transform: rotate(0deg);
     }
@@ -152,7 +156,7 @@ main{
     100% {
         transform: rotate(360deg);
     }
-} */
+}
 
 .plants-content {
     max-width: 540px;
@@ -278,9 +282,94 @@ main{
     background-size: cover;
     height: 425px;
 }
+/* Join & Bunch section */
+.join-part {
+    margin-top: 120px;
+    max-width: 1440px;
+    
+}
 
+.join-content {
+    background-image: url(../assets/news-letter-bg.png);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    max-width: 100%;
+    /* margin: 0 0; */
+    margin-left: auto;
 
+}
 
+.join-content .section-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+
+form {
+    gap: 0;
+    width: 850px;
+    margin-left: 305px;
+}
+
+input {
+    font-size: 1em;
+    color: var(--text-color);
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+}
+
+input[type=email] {
+    width: 70%;
+    border-radius: 3px 0 0 3px;
+}
+
+input[type=submit] {
+    width: 30%;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    border-radius: 0 3px 3px 0;
+}
+/* footer section style */
+
+.footer-section{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 360px 85px 130px 216px;
+    justify-content: space-between;
+}
+
+.footer-logo img{
+    width: 135px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.footer-links ul li{
+    list-style: none;
+    font-size: 1em;
+   
+}
+.footer-link{
+    text-decoration: none;
+    color: #6B7280;
+
+}
+
+.icon-img{
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
 
 
 
@@ -323,6 +412,9 @@ main{
     .plants-des{
         width: 368px;
     }
+    .plants-content{
+        width: 100%;
+    }
     .flowers-card{
         grid-template-columns: repeat(2, 1fr);
         margin: 0 15px;
@@ -338,6 +430,7 @@ main{
     .badge{
         display: none;
     }
+    /* latest & deals respons */
     .latest-items{
         flex-direction: column;
         gap: 20px;
@@ -365,5 +458,17 @@ main{
     .bg-zobo h4 {
     font-size: 1.25em;
     font-weight: bold;
-}    
+    } 
+       /* footer respons */
+    .footer-section{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 25px 20px;
+    }
+    .icon-img{
+    justify-content: start;
+    }
+    .footer-links ul li{
+    gap: 32px;
+    }
 }
