@@ -197,9 +197,6 @@ footer{
     font-family: "Inter", sans-serif;
 }
 /* Deals Part CSS Start here */
-/* .deals-part {
-    padding: 0px 0px 120px 0;
-} */
 
 .latest-items {
     margin-top: 120px;
@@ -283,41 +280,44 @@ footer{
     height: 425px;
 }
 /* Join & Bunch section */
-.join-part {
-    margin-top: 120px;
+.section{
+    margin: 0 auto;
     max-width: 1440px;
+}
+.join-section {
+    margin-top: 120px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    min-height: 533px;
+    width: 100%;
+    margin-left: 10px;
     
 }
-
 .join-content {
-    background-image: url(../assets/news-letter-bg.png);
-    /* background-position: center center; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 200px 0;
-    max-width: 100%;
-    /* margin: 0 0; */
-    margin-left: auto;
-
+    padding: 200px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 23px;
 }
 
-.join-content .section-header h2 {
+.join-content .section-header h2{
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 23px;
+    font-family: "Noto Serif", serif;
+    
 }
-
 form {
     gap: 0;
     width: 850px;
-    margin-left: 305px;
 }
 
 input {
     font-size: 1em;
-    color: var(--text-color);
     padding: 15px 20px;
     border: none;
     outline: none;
@@ -370,20 +370,6 @@ input[type=submit] {
     align-items: center;
     gap: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -456,19 +442,36 @@ input[type=submit] {
         font-weight: 500;
     }
     .bg-zobo h4 {
-    font-size: 1.25em;
-    font-weight: bold;
+        font-size: 1.25em;
+        font-weight: bold;
     } 
-       /* footer respons */
+    /* footer respons */
     .footer-section{
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    padding: 25px 20px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 25px 25px;
     }
     .icon-img{
-    justify-content: start;
+        justify-content: start;
     }
     .footer-links ul li{
-    gap: 32px;
+        gap: 32px;
+    }
+    /* join section respons */
+    form {
+        width: 380px;
+        margin: 0 auto;
+        
+    }
+    .join-section{
+        max-width: 100%;
+        height: 275px;
+    }
+    .section-header{
+        margin: 0 43px;
+    }
+    .section-header h2{
+        font-size: 1.25rem;
+        font-weight: bold;
     }
 }
