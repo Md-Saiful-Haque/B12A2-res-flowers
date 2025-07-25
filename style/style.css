@@ -141,10 +141,10 @@ main{
     position: absolute;
     top: -130px;
     right: -90px;
-    animation: spin 5s linear infinite;
+    /* animation: spin 5s linear infinite; */
 }
 
-@keyframes spin {
+/* @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
@@ -152,7 +152,7 @@ main{
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 .plants-content {
     max-width: 540px;
@@ -174,10 +174,110 @@ main{
     line-height: 28px;
     font-family: "Inter", sans-serif;
 }
+/* letest deals section style */
+
+.deals{
+    text-align: center;
+    margin-top: 130px;
+}
+.deals-title{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+}
+.deals-des{
+    max-width: 888px;
+    margin: 25px auto;
+    font-size: 1.3;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+/* Deals Part CSS Start here */
+/* .deals-part {
+    padding: 0px 0px 120px 0;
+} */
+
+.latest-items {
+    margin-top: 120px;
+    gap: 25px;
+    justify-content: space-between;  
+}
+.deals-right {
+    width: 67%;
+}
+.deals-left { 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+}
+.latest-item {
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 14px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+   
+}
+
+.latest-item::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.latest-item h4 {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: "Noto Serif", serif;
+}
+.bg-zobo h4 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.link-zobo{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.deals-link{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
 
 
+.bg-bloom{
+    background-image: url(../assets/deal-bloom.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
 
+.bg-ana{
+    background-image: url(../assets/deal-ana.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
 
+.bg-zobo{
+    background-image: url(../assets/deal-zabo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 425px;
+}
 
 
 
@@ -238,5 +338,32 @@ main{
     .badge{
         display: none;
     }
-    
+    .latest-items{
+        flex-direction: column;
+        gap: 20px;
+        padding: 16px;
+        margin-top: 51px;
+    }
+    .deals-left {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .deals-right {
+        width: 100%;
+    }
+    .latest-item::before {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .bg-bloom, .bg-ana, .bg-zobo{
+        height: 185px;
+    }
+    .link-zobo{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .bg-zobo h4 {
+    font-size: 1.25em;
+    font-weight: bold;
+}    
 }
